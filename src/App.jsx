@@ -8,7 +8,7 @@ function App() {
     <div>
       <Header />
 
-      <Note />
+      <Note title="hel" content="sdfa" />
       
       <Footer />
     </div>
