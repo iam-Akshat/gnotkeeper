@@ -3,6 +3,7 @@ import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
 import Note from "./Note.jsx";
 import NoteTaker from "./NoteTaker.jsx";
+import keyGen from "./keyGen"
 
 function App() {
   const [notes,addNote]=useState([])
@@ -19,7 +20,7 @@ function App() {
       <Header />
       <NoteTaker onSubmitNote={submitNote}/> 
       {notes.map((note)=>{
-       return <Note key={new Date().toUTCString()} title={note.title} content={note.content}/>
+       return <Note key={keyGen()} title={note.title} content={note.content}/>
       })}
       
       <Footer />  
