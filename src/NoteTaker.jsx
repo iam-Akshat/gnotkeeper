@@ -13,8 +13,9 @@ function NoteTaker (props) {
             content:""})
     }    
     function handleChange(event){
-        const val=event.target.value;
-        const name=event.target.name;
+        const {value:val,name}=event.target;
+        // const val=event.target.value;
+        // const name=event.target.name;
         setNoteInfo((prevVal)=>{
           return name==="title" ? {title:val,content:prevVal.content}:{title:prevVal.title,content:val}
         })
@@ -22,7 +23,7 @@ function NoteTaker (props) {
     return (
         <div className="add-Note">
             <input onChange={handleChange} type="text" name="title" id="title" value={noteInfo.title} placeholder="Title"/>
-            <input onChange={handleChange} type="text" name="content" id="content" value={noteInfo.content} placeholder="Content"/>
+            <textarea rows="3" onChange={handleChange} type="text" name="content" id="content" value={noteInfo.content} placeholder="Take a note..."/>
             <button onClick={addNote}>Add</button>
         </div>
     )
