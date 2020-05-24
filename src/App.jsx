@@ -6,21 +6,32 @@ import NoteTaker from "./NoteTaker.jsx";
 import keyGen from "./keyGen"
 
 function App() {
-  const [notes,addNote]=useState([])
-
+  const [notes,setNote]=useState([])
   function submitNote(title,content){
     const note={title,content}
-    addNote((prevVal)=>{
+    setNote((prevVal)=>{
       return [...prevVal,note]
     })
+  }
 
+  function deleteNote(note) {
+    const {title,content}=note
+    setNote((prevNotes)=>{
+     
+       return prevNotes.filter((curNote)=>{
+         //console.log(note,curNote,curNote==note)
+         
+         return curNote.title!==title && curNote.content!==content
+       })
+    })
   }
   return (
     <div>
       <Header />
       <NoteTaker onSubmitNote={submitNote}/> 
       {notes.map((note)=>{
-       return <Note key={keyGen()} title={note.title} content={note.content}/>
+        const uuid=keyGen()
+       return <Note delete={deleteNote} key={uuid} title={note.title} content={note.content}/>
       })}
       
       <Footer />  
