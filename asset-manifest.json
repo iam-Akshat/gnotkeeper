@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/gnotkeeper/static/css/main.d14b29dd.chunk.css",
+    "main.js": "/gnotkeeper/static/js/main.edd0e164.chunk.js",
+    "main.js.map": "/gnotkeeper/static/js/main.edd0e164.chunk.js.map",
+    "runtime-main.js": "/gnotkeeper/static/js/runtime-main.ad52d43c.js",
+    "runtime-main.js.map": "/gnotkeeper/static/js/runtime-main.ad52d43c.js.map",
+    "static/js/2.081e77ab.chunk.js": "/gnotkeeper/static/js/2.081e77ab.chunk.js",
+    "static/js/2.081e77ab.chunk.js.map": "/gnotkeeper/static/js/2.081e77ab.chunk.js.map",
+    "index.html": "/gnotkeeper/index.html",
+    "precache-manifest.a15880b8cc0c4e2d9968027162d845d3.js": "/gnotkeeper/precache-manifest.a15880b8cc0c4e2d9968027162d845d3.js",
+    "service-worker.js": "/gnotkeeper/service-worker.js",
+    "static/css/main.d14b29dd.chunk.css.map": "/gnotkeeper/static/css/main.d14b29dd.chunk.css.map",
+    "static/js/2.081e77ab.chunk.js.LICENSE.txt": "/gnotkeeper/static/js/2.081e77ab.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ad52d43c.js",
+    "static/js/2.081e77ab.chunk.js",
+    "static/css/main.d14b29dd.chunk.css",
+    "static/js/main.edd0e164.chunk.js"
+  ]
+}
